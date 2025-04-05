@@ -1,0 +1,148 @@
+/* 1. Base styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #1b262c;
+  color: #bbe1fa;
+  padding: 20px;
+}
+
+/* 2. Grid container - responsive layout */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+  justify-content: center;
+  gap: 20px; /* Adds spacing between cards */
+}
+
+/* 3. Profile Card */
+.profile_card {
+  background: #0f4c75;
+  border: 2px solid silver;
+  border-radius: 24px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 4. Image */
+.profile_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* 5. Text Data */
+.text-data {
+  text-align: center;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.job {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* 6. Social Media Buttons */
+.media-button {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  color: blanchedalmond;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: #333; /* Default fallback */
+}
+
+/* 7. Message Button */
+.buttons {
+  margin-top: 20px;
+}
+
+.button {
+  color: #fff;
+  background-color: #4070f4;
+  padding: 10px 24px;
+  font-size: 14px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0e4bf1;
+}
+
+/* 8. Skills & Table */
+.skill {
+  width: 100%;
+}
+
+.skill table {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.skill td {
+  padding: 6px 0;
+}
+
+.column2 {
+  padding-left: 17px;
+}
+
+/* 9. Hobbies */
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
+.hobbies li {
+  list-style: none;
+}
+
+/* 10. Bio Paragraph */
+blockquote {
+  padding: 15px;
+  text-align: justify;
+  font-style: italic;
+  border-left: 4px solid #bbe1fa;
+}
+
+/* 11. Responsive Tweaks */
+@media (max-width: 768px) {
+  .grid-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
